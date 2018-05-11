@@ -1,0 +1,93 @@
+*{
+    /* supprimer toutes les marges */
+    margin: 0;
+    padding: 0;
+
+    /* intégrer les border et les padding dans la taille des boites/balises */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+   
+   
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+    /* passer d'une base 16 à une base 10 */
+    html{
+        font-size: 62.5%; /* 1rem => 10px */
+    }
+
+    body{
+        font-size: 1.5rem;
+        
+        
+    }
+
+/**/
+header{
+    background-color: white;
+    color: white;
+    background-image: url("./femme_1.png");
+    height: 450px;
+    
+
+}
+
+header p{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+
+
+.spring{
+    margin: auto;
+    text-align: center;
+    padding-top:162.5px;
+    height:287.5px;
+    width:1170px;
+}
+.spring h1{
+    font-weight: bold;
+}
+
+.shop{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-radius: 0.5rem;
+    padding: 0.8rem 2rem;
+    color: white;
+    font-size: 1rem;
+   
+}
+
+#products h2{
+    background-color: white;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    padding: 5rem;
+}
+   
+#products{
+    position: relative;
+}
+
+.man, .women, .watch, .autum, .sale{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-style: italic;
+}
+
+.man_bdr, .women_bdr, .watch_bdr, .autum_bdr, .sale.bdr{
+   
+        outline: 0.5rem solid white;
+        outline-offset: -4rem;
+      
+}

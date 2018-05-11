@@ -6,10 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Brandly</title>
 
-        <!-- Intégration du CDN Bootstrap 4 CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!-- Intégration du CDN Bootstrap 3 CSS -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Intégrer la feuille de style de la page APRES Bootstrap -->
         <link rel="stylesheet" href="./css/style.css">
@@ -17,36 +16,40 @@
     </head>
 
     <header>
-        <p> <img src="./image/logo.png" alt="Name of the brand is Brandly">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Brands</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>                
-          </ul>        
-        </p>
+     
+        <p class="home"> <img src="./image/logo.png" alt="Name of the brand is Brandly">
+          
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Brands</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>                
+        </p>       
+        
         <div class="spring">
           <p>SPRING / SUMMER COLLECTION</p>
           <h1>UP TO 60% DISCOUNT NEW ARRIVAL</h1>
           <p>TRENDING NEW ITEMS FROM CREATORS AROUND THE WORLD</p>
-          <button>SHOP NOW</button>
+          <button class="shop">SHOP NOW</button>
         </div>
+        
+    
     </header>
 
     <section id="products">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
+                        <h2>Latest products</h2>
                         <div class="row">
-                            <div class="col-md-4"><img src="./image/man.png" alt="man's picture"></div>
-                            <div class="col-md-4"><img src="./image/woman.png" alt="woman's picture"></div>
-                            <div class="col-md-4"><img src="./image/watch.png" alt="watch's picture"></div>
+                            <div class="col-md-4"><p class="man">Men</p><img class="man_bdr" src="./image/man.png" alt="man's picture"></div>
+                            <div class="col-md-4"><p class="women">Women</p><img class="women_bdr" src="./image/woman.png" alt="woman's picture"></div>
+                            <div class="col-md-4"><p class="watch">Watches</p><img class="watch_bdr" src="./image/watch.png" alt="watch's picture"></div>
                        </div>
                        <div class="row">
-                           <div class="col-md-6"><img src="./image/autum.png" alt="girl's picture"></div>
-                           <div class="col-md-6"><img src="./image/sale.png" alt="girl's picture"></div>
+                           <div class="col-md-6"><p class="autum">40% off</br> new autumn</br>collection</p><img class="autum_bdr" src="./image/autum.png" alt="girl's picture"></div>
+                           <div class="col-md-6"><p class="sale">mega sale</br> on items from </br>spirit collection</p><img class="sale_bdr" src="./image/sale.png" alt="girl's picture"></div>
                        </div>
                     </div>
                 </div>
